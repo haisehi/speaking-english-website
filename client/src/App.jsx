@@ -11,6 +11,10 @@ import TestResult from "./pages/client/TestResult"
 import Translate from "./pages/client/Translate"
 import Profile from "./pages/client/Profile"
 import Homee from "./pages/client/Homee"
+import SpeakingTopics from "./pages/client/SpeakingTopics"
+import SpeakingLessons from "./pages/client/SpeakingLessons"
+import SpeakingPractice from "./pages/client/SpeakingPractice"
+
 
 function App() {
   return (
@@ -27,6 +31,10 @@ function App() {
       <Route path="/test-result/:id" component={TestResult} />
       <Route path="/translate" component={Translate} />
       <Route path="/profile" component={Profile} />
+      <Route path="/speaking" component={SpeakingTopics} />
+      <Route path="/speaking/topic/:id" component={SpeakingLessons} />
+      <Route path="/speaking/lesson/:id" component={SpeakingPractice} />
+
     </Switch>
   )
 }
